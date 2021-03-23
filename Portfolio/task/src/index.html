@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Cardo&family=Nunito+Sans&family=Rokkitt&display=swap" rel="stylesheet">
+</head>
+<body id="scroll">
+    <nav>
+        <div class="nav-list">
+            <a href="#about" class="nav-item">About me</a>
+            <a href="#portfolio" class="nav-item">Portfolio</a>
+            <a href="#contacts" class="nav-item">Contacts</a>
+            <a href="index.html" class="nav-item" id="home">Home</a>
+
+            <div class="hamburger">
+                <button id="hamburger-button" onclick="hamburger()"></button>
+                <ul class="hamburger-list">
+                    <li class="hamburger-item"><a href="#about">About me</a></li>
+                    <li class="hamburger-item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="hamburger-item"><a href="#contacts">Contacts</a></li>
+                    <li class="hamburger-item"><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1 class="title">Jane Doe, <br>Front-end developer</h1>
+    </header>
+
+    <section id="about">
+        <img id="image" src="imgs/image.jpg" alt="">
+        <img id="photo" src="imgs/person.jpg" alt="photo">
+
+        <div class="about-text">
+            <h2 id="about-title">About me</h2>
+
+            <div class="introduction">
+                <p>
+                    Hi, I'm Jane Doe. I've been a junior front-end developer for 5 months now.
+                </p>
+                <p>
+                    For me, programming is not just a job, it's a hobby.
+                </p>
+                <p>
+                    I'm open to new knowledge, I like to study new technologies
+                    and apply them in practice.
+                </p>
+                <p>
+                    <b>Skills: </b>HTML, CSS, JS, React.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2 id="portfolio-title">Portfolio</h2>
+
+        <div class="works">
+            <div class="item">
+                <button class="open-window" onclick="show('flashcard-window')"></button>
+                <img class="project-img" src="imgs/project1.png" alt="flashcards">
+                <p class="project-title"><b>Flashcards</b></p>
+            </div>
+
+            <div class="item">
+                <button class="open-window" onclick="show('piano-window')"></button>
+                <img class="project-img" src="imgs/project2.png" alt="virtual-piano">
+                <p class="project-title"><b>Virtual Piano</b></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <h2 id="contacts-title">Contacts</h2>
+        <p>You can contact me at
+            <a href="mailto:test@hyperskill.org">test@hyperskill.org</a><br>
+            or phone number - <a href="tel:12345678910">12345678910</a></p>
+
+        <div class="websites">
+            <img class="icons" src="imgs/github.svg" alt="github">
+            <img class="icons" src="imgs/facebook.svg" alt="facebook">
+            <img class="icons" src="imgs/twitter.svg" alt="twitter">
+            <img class="icons" src="imgs/instagram.svg" alt="instagram">
+        </div>
+    </section>
+
+    <footer>
+        <p id="author">Jane Doe</p>
+        <p id="year">2020</p>
+    </footer>
+
+    <div class="gray-box"></div>
+
+    <div class="window" id="flashcard-window">
+        <h1 class="popup-title">Flashcards</h1>
+
+        <p class="popup-text">You can see the project at the following link:
+            <a href="https://github.com/wangpengda1210/Flashcards-HTML" target="_blank">flashcards</a>.</p>
+        <p class="popup-text">I did this project when I was studying the frontend on HyperSkill.
+            I created a web page with flip-down flash cards. I learned some HTML
+            basics and learned that CSS can easily make a beautiful design.</p>
+
+        <button class="popup-button" onclick="hide('flashcard-window')">Close</button>
+    </div>
+
+    <div class="window" id="piano-window">
+        <h1 class="popup-title">Virtual Piano</h1>
+
+        <p class="popup-text">You can see the project at the following link:
+            <a href="https://github.com/wangpengda1210/Virtual-Piano" target="_blank">virtual piano</a>.</p>
+        <p class="popup-text">I did this project when I was studying the frontend on HyperSkill.
+            I created a web page with a visual piano that can be played using keyboard.
+            I learned some HTML basics and learned that CSS can easily make a beautiful design.</p>
+
+        <button class="popup-button" onclick="hide('piano-window')">Close</button>
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

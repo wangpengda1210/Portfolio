@@ -1,0 +1,17 @@
+type: code
+custom_name: Hi! I'm Mike from New York!
+files:
+- name: main.js
+  visible: true
+  text: |-
+    function User() {
+    }
+
+    const user;
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/9976#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Fri, 19 Mar 2021 08:53:21 UTC
+record: -1
